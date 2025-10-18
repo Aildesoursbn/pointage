@@ -10,25 +10,24 @@
   <main class="app">
     <div class="card">
       <h1>POINTAGE</h1>
-      <p>Cliquez sur un bouton pour démarrer ou arrêter le chronomètre.</p>
+      <p>Cliquez sur un bouton pour démarrer ou arrêter le temps.</p>
 
       <section class="bloc">
+        <h2>Travail</h2>
         <button id="workBtn" class="btn">Travail</button>
-        <p id="workTimer" class="status">00:00:00</p>
+        <p id="workTime">0h00</p>
       </section>
 
       <section class="bloc">
+        <h2>Déjeuner</h2>
         <button id="lunchBtn" class="btn">Déjeuner</button>
-        <p id="lunchTimer" class="status">00:00:00</p>
+        <p id="lunchTime">0h00</p>
       </section>
 
       <section>
-        <h2>Résumé</h2>
-        <p>Travail net : <span id="dailyTotal">0h00</span></p>
-        <h3>Semaine</h3>
-        <select id="weekDropdown"></select>
+        <h2>Résumé semaine</h2>
+        <select id="weekSummary"></select>
         <div class="actions">
-          <button id="exportCsv" class="btn small">Exporter CSV</button>
           <button id="clearAll" class="btn small danger">Effacer tout</button>
         </div>
       </section>
