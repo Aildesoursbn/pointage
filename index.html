@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pointage Terminal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="card">
+      <header>
+        <h1>POINTAGE</h1>
+        <p>Cliquez sur un bouton pour débuter ou finir automatiquement.</p>
+      </header>
+
+      <section>
+        <h2>Travail</h2>
+        <button id="workBtn" class="btn">Travail</button>
+        <p id="workStatus" class="status">Aucun enregistrement</p>
+      </section>
+
+      <section>
+        <h2>Déjeuner</h2>
+        <button id="lunchBtn" class="btn">Déjeuner</button>
+        <p id="lunchStatus" class="status">Aucun enregistrement</p>
+      </section>
+
+      <section>
+        <h2>Résumé journée</h2>
+        <p>Travail net : <span id="dailyTotal">0h00</span></p>
+        <h3>Résumé semaine</h3>
+        <ul id="weekSummary"></ul>
+        <div class="actions">
+          <button id="exportCsv" class="btn small">Exporter CSV</button>
+          <button id="clearAll" class="btn small danger">Effacer tout</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
